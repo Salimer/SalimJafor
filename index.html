@@ -7,22 +7,143 @@
   </head>
 
   <body>
-    <p>Hello World!</p>
-
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  
+    <form id="survey-form">
+      <div class="block">
+        <div>
+          <label for="name" id="name-label">Name</label>
+        </div>
+        <div>
+          <input id="name" type="text" required placeholder="Enter your name"></input>
+        </div>
+      </div>
+    
+      <div class="block">
+        <div>
+          <label for="email" id="email-label">Email</label>
+        </div>
+        <div>
+          <input id="email" type="email" required placeholder="Enter your email"></input>
+        </div>
+      </div>
 
-    Hello Camper!
+      <div class="block">
+        <div>
+          <label for="number" id="number-label">Age <a id="optional">(optional)</a></label>
+        </div>
+        <div class="NEAi"> 
+          <input type="number" id="number" min="0" max="10" >
+        </div>
+      </div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <div class="block">
+        <div class="NEA">
+          <label for="dropdown">
+            Which option best describes your current role?
+          </label>
+        </div>
+        <div class="NEAi">
+            <select id="dropdown" placeholder="choose">
+              <option value="Student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer Not To Say">Prefer Not To Say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+      </div>
 
-    - The freeCodeCamp Team
+      <div class="block">
+        <label>
+          Would you recommend freeCodeCamp to a friend?
+          <div class="radio">
+            <input type="radio" name="reco" value="Definitely">Definitely</input>
+          </div>
+          <div class="radio">
+            <input type="radio" name="reco" value="Maybe">Maybe</input>
+          </div>
+          <div class="radio">
+            <input type="radio" name="reco" value="Not sure">Not sure</input>
+          </div>
+        
+    
+        </label>
+      </div>
+        
+      <div class="block">
+        <label>
+          What is your favorite feature of freeCodeCamp?
+          <div>
+          <select>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+          </select>
+          </div>
+        </label>
+      </div>
 
-    -->
+      <div class="block">
+        <label>
+          What would you like to see improved? <a id="optional">(Check all that apply)</a>
+          <div>
+            <input type="checkbox"  name="Impro" value="Front-end Projects">Front-end Projects</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Back-end Projects">Back-end Projects</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Data Visualization">Data Visualization</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Challenges">Challenges</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Open Source Community">Open Source Community</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Gitter help rooms">Gitter help rooms</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Videos">Videos</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="City Meetups">City Meetups</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Wiki">Wiki</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Forum">Forum</input>
+          </div>
+          <div>
+            <input type="checkbox"  name="Impro" value="Additional Courses">Additional Courses</input>
+          </div>
+        </label>
+      </div>
+
+      <div class="block">
+        <label>
+          Any comments or suggestions?
+          <div>
+          <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        </label>
+      </div>
+
+      <div id="center">
+        <button  type="submit" id="submit">Submit</button>
+      </div>
+  
+
+    </form>
+    
+   
     <script  src="js/index.js"></script>
   </body>
 </html>

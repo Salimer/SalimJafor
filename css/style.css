@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: aqua;
+}
+
+form {
+     background-color: lightblue;
+     text-align: left;
+     padding: 50px;
+     margin: 50px;
+}
+
+.block {
+    padding: 10px;
+}
+
+
+#optional {
+    font-size:small;
+}
+
+.radio {
+    position: relative;
+    ;
+}
+
+
+#center {
+    text-align: center;
+}
