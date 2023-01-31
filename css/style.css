@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: aqua;
+    background-color: antiquewhite;
 }
 
 form {
@@ -28,3 +28,8 @@ form {
 #center {
     text-align: center;
 }
+
+textarea {
+    width: 300px;
+    height: 80px;
+  }
